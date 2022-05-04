@@ -4,7 +4,7 @@
   <a href="https://github.com/sdxqw/ForgeMixins">ForgeMixins</a>
 </h1>
 
-<h4 align="center">A crazy themplate for 1.8.9 with forge and mixins</h4>
+<h4 align="center">A crazy themplate for modding in 1.8.9 with forge and mixin!</h4>
 
 <h3 align="center">
     <a href="#get-start">Get start</a> •
