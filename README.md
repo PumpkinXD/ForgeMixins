@@ -24,8 +24,9 @@ If you are here you need to setup our project!. Please follow this steps:
 * 4 - Change the line 34 only "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
 * 5 - Change the line 92 "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
 * 6 - Change the file name "mixins.examplemod.json" to "mixins.MODID-STEP-3.json" please use the modid in step 3!
-* 7 - Click the file "mixins.examplemod.json" or what its now and change line 4 with your package where mixins should be.
-* 7.1 - Dont close the file "mixins.examplemod.json" but change the line 5 "mixins.examplemod.refmap.json" to "mixins.MODID-STEP-3.refmap.json" please use the modid in step 3!
+* Open the file "mixins.examplemod.json"
+* 7 - Change the line 4 with your package where mixins should be.
+* 7.1 - Change the line 5 "mixins.examplemod.refmap.json" to "mixins.MODID-STEP-3.refmap.json" please use the modid in step 3!
 * 8 - Now the mod should work! have fun learing mixins!
 
 ## Key Features
