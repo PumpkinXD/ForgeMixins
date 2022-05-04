@@ -1,6 +1,6 @@
 <br class="Apple-interchange-newline"/>
 <h1 align="center">
-  <img src=https://photos.google.com/photo/AF1QipP9xp_TOBk9YhxLyY0w64Cbetqu7YXU4qHJTyx6.png>
+  <img src=https://github.com/MinecraftForge/MinecraftForge/blob/1.18.x/docs/assets/Forge_logo.svg>
   <a href="https://github.com/sdxqw/ForgeMixins">ForgeMixins</a>
 </h1>
 
