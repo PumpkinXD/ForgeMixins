@@ -81,6 +81,8 @@ shadowJar {
     archiveFileName = jar.archiveFileName
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     configurations = [project.configurations.include]
+    classifier ""
+    exclude "LICENSE.txt", "dummyThing"
 }
 
 jar {
@@ -108,11 +110,6 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
-}
-
-shadowJar {
-    classifier ""
-    exclude "LICENSE.txt", "dummyThing"
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
