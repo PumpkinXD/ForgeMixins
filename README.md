@@ -4,7 +4,7 @@
   <a href="https://github.com/sdxqw/ForgeMixins">ForgeMixins</a>
 </h1>
 
-<h4 align="center">A crazy themplate for modding in 1.8.9 with forge and mixin!</h4>
+<h4 align="center">A crazy template for modding in 1.8.9 with forge and mixin!</h4>
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/sdxqw/ForgeMixins" alt="GitHub last commit"/>
