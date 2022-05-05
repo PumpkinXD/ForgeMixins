@@ -8,7 +8,6 @@
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/sdxqw/ForgeMixins" alt="GitHub last commit"/>
-    <img src="https://img.shields.io/github/workflow/status/sdxqw/ForgeMixins/build" alt="Build status"/>
     <img src="https://img.shields.io/badge/MC-1.8.9-brightgreen.svg" alt="Minecraft"/>
     <br>
     <img src="https://img.shields.io/github/v/release/sdxqw/ForgeMixins.svg" alt="Release"/>
