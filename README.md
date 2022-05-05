@@ -6,6 +6,17 @@
 
 <h4 align="center">A crazy themplate for modding in 1.8.9 with forge and mixin!</h4>
 
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/sdxqw/ForgeMixins" alt="GitHub last commit"/>
+    <img src="https://img.shields.io/github/workflow/status/sdxqw/ForgeMixins/build" alt="Build status"/>
+    <img src="https://img.shields.io/badge/MC-1.8.9-brightgreen.svg" alt="Minecraft"/>
+    <br>
+    <img src="https://img.shields.io/github/v/release/sdxqw/ForgeMixins.svg" alt="Release"/>
+    <img src="https://img.shields.io/github/languages/code-size/sdxqw/ForgeMixins" alt="GitHub code size in bytes"/>
+    <img src="https://img.shields.io/tokei/lines/github/sdxqw/ForgeMixins"/>
+    <br>
+</div>
+
 <h3 align="center">
     <a href="#get-start">Get start</a> •
     <a href="#key-features">Key Features</a> •
