@@ -30,6 +30,7 @@ If you are here you need to setup our project!. Please follow this steps:
 * Open the file "build.gradle"
 * 1 - Change the line 22 with your group id ex: "io.github.sdxqw"
 * 2 - Change the line 23 with your modname (should be the name of the jar)
+* 2.1 - Change the line 38 "-Xms6G" and "-Xmx6G" to how much ram you want to host!
 * 3 - Change the line 24 with your modid (will be the most important part of this setup)
 * 4 - Change the line 34 only "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
 * 5 - Change the line 92 "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
