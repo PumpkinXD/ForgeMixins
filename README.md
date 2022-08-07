@@ -4,7 +4,17 @@
   <a href="https://github.com/sdxqw/ForgeMixins">ForgeMixins</a>
 </h1>
 
-<h4 align="center">A crazy themplate for modding in 1.8.9 with forge and mixin!</h4>
+<h4 align="center">A crazy template for modding in 1.8.9 with forge and mixin!</h4>
+
+<div align="center">
+    <img src="https://img.shields.io/github/last-commit/sdxqw/ForgeMixins" alt="GitHub last commit"/>
+    <img src="https://img.shields.io/badge/MC-1.8.9-brightgreen.svg" alt="Minecraft"/>
+    <br>
+    <img src="https://img.shields.io/github/v/release/sdxqw/ForgeMixins.svg" alt="Release"/>
+    <img src="https://img.shields.io/github/languages/code-size/sdxqw/ForgeMixins" alt="GitHub code size in bytes"/>
+    <img src="https://img.shields.io/tokei/lines/github/sdxqw/ForgeMixins"/>
+    <br>
+</div>
 
 <h3 align="center">
     <a href="#get-start">Get start</a> •
@@ -20,6 +30,7 @@ If you are here you need to setup our project!. Please follow this steps:
 * Open the file "build.gradle"
 * 1 - Change the line 22 with your group id ex: "io.github.sdxqw"
 * 2 - Change the line 23 with your modname (should be the name of the jar)
+* 2.1 - Change the line 38 "-Xms6G" and "-Xmx6G" to how much ram you want to host!
 * 3 - Change the line 24 with your modid (will be the most important part of this setup)
 * 4 - Change the line 34 only "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
 * 5 - Change the line 92 "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
