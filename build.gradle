@@ -7,9 +7,9 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.github.asbyth:ForgeGradle:8708bf3e01'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
         classpath 'com.github.xcfrg:MixinGradle:0.6-SNAPSHOT'
-        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
     }
 }
 
@@ -18,33 +18,34 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'com.github.johnrengelman.shadow'
 
-version = "1.8.9"
-group = "io.github.sdxqw"
-archivesBaseName = "ExampleMod"
 String modid = "examplemod"
+String tweaker = "io.github.sdxqw.ifmltweaker.FMLTweaker"
 
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
-compileJava.options.encoding = 'UTF-8'
+compileJava {
+    sourceCompatibility = targetCompatibility = 8
+}
+
+version "1.8.9"
+group "io.github.sdxqw"
 
 minecraft {
     version = "1.8.9-11.15.1.2318-1.8.9"
     runDir = 'run'
     mappings = "stable_22"
     def args = [
-            '-Dfml.coreMods.load=io.github.sdxqw.ifmltweaker.FMLTweaker',
+            "-Dfml.coreMods.load=${tweaker}",
             '-Dmixin.hotSwap=true',
             '-Dmixin.checks.interfaces=true',
-            // Optimized start
-            "-XX:-DisableExplicitGC", "-Xms6G", "-Xmx6G", "-XX:+UseG1GC","-XX:+ParallelRefProcEnabled", "-XX:MaxGCPauseMillis=200", "-XX:+UnlockExperimentalVMOptions", "-XX:+DisableExplicitGC", "-XX:+AlwaysPreTouch", "-XX:G1NewSizePercent=30", "-XX:G1MaxNewSizePercent=40", "-XX:G1HeapRegionSize=8M", "-XX:G1ReservePercent=20", "-XX:G1HeapWastePercent=5", "-XX:G1MixedGCCountTarget=4", "-XX:InitiatingHeapOccupancyPercent=15", "-XX:G1MixedGCLiveThresholdPercent=90", "-XX:G1RSetUpdatingPauseTimePercent=5", "-XX:SurvivorRatio=32", "-XX:+PerfDisableSharedMem", "-XX:MaxTenuringThreshold=1"
+            "-XX:-DisableExplicitGC"
     ]
     clientJvmArgs.addAll(args)
     serverJvmArgs.addAll(args)
-    makeObfSourceJar = false
+    makeObfSourceJar = true
 }
 
 configurations {
-    include
-    implementation.extendsFrom(include)
+    sdxqw
+    implementation.extendsFrom(sdxqw)
 
     runtimeOnly{
         canBeResolved = true
@@ -59,9 +60,9 @@ repositories {
 }
 
 dependencies {
-    include 'com.github.TheNullicorn:Nedit:2.1.0'
+    sdxqw('com.github.TheNullicorn:Nedit:2.1.0')
 
-    implementation('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
+    sdxqw('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
         exclude module: 'gson'
         exclude module: 'commons-io'
         exclude module: 'guava'
@@ -80,9 +81,8 @@ mixin {
 }
 
 shadowJar {
-    archiveFileName = jar.archiveFileName
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    configurations = [project.configurations.include]
+    configurations = [project.configurations.sdxqw]
     classifier ""
     exclude "LICENSE.txt", "dummyThing"
 }
@@ -93,7 +93,7 @@ jar {
             'ForceLoadAsMod': true,
             'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
             'MixinConfigs': "mixins.${modid}.json",
-            'FMLCorePlugin': 'io.github.sdxqw.ifmltweaker.FMLTweaker'
+            'FMLCorePlugin': "${tweaker}"
     )
 }
 
