@@ -28,17 +28,13 @@
 If you are here you need to setup our project!. Please follow this steps:
 
 * Open the file "build.gradle"
-* 1 - Change the line 22 with your group id ex: "io.github.sdxqw"
-* 2 - Change the line 23 with your modname (should be the name of the jar)
-* 2.1 - Change the line 38 "-Xms6G" and "-Xmx6G" to how much ram you want to host!
-* 3 - Change the line 24 with your modid (will be the most important part of this setup)
-* 4 - Change the line 34 only "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
-* 5 - Change the line 92 "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
-* 6 - Change the file name "mixins.examplemod.json" to "mixins.MODID-STEP-3.json" please use the modid in step 3!
+* 1 - Change the line 21 with your modid (will be the most important part of this setup)
+* 2 - Change the line 22 only "io.github.sdxqw.ifmltweaker.FMLTweaker" to your tweaker dir!
+* 3 - Change the file name "mixins.examplemod.json" to "mixins.MODID-STEP-3.json" please use the modid in step 1!
 * Open the file "mixins.examplemod.json"
-* 7 - Change the line 4 with your package where mixins should be.
-* 7.1 - Change the line 5 "mixins.examplemod.refmap.json" to "mixins.MODID-STEP-3.refmap.json" please use the modid in step 3!
-* 8 - Now the mod should work! have fun learing mixins!
+* 4 - Change the line 4 with your package where mixins should be.
+* 5 - Change the line 5 "mixins.examplemod.refmap.json" to "mixins.MODID-STEP-3.refmap.json" please use the modid in step 1!
+* 6 - Now the mod should work! have fun learing mixins!
 
 ## Key Features
 
