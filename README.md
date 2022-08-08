@@ -23,7 +23,7 @@
     <a href="#contributing">Contributing</a> •
 </h3>
 
-## Get start
+## Get start (maybe out-dated guide build your self.)
 
 If you are here you need to setup our project!. Please follow this steps:
 
