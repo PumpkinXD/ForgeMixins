@@ -7,8 +7,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
-        classpath 'com.github.xcfrg:MixinGradle:0.6-SNAPSHOT'
+        classpath 'com.github.sdxqw:ForgeGradle:f2c5bb338e'
+        classpath 'com.github.sdxqw:MixinGradle:0.6-SNAPSHOT'
         classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
     }
 }
