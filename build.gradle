@@ -60,6 +60,7 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor('org.spongepowered:mixin:0.7.11-SNAPSHOT')
     sdxqw('com.github.TheNullicorn:Nedit:2.1.0')
 
     sdxqw('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
